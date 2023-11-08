@@ -1,0 +1,35 @@
+//Task 06: Count Occurrences
+//Write a function named countOccurrences that counts how many times a given integer appears in an array of integers.
+
+#include <stdio.h>
+
+int countOccurrences(int arr[], int size, int k)
+{
+    int count = 0;
+
+    for (int i = 0; i < size; i++)
+    {
+        if (arr[i] == k)
+        {
+            count++;
+        }
+    }
+    return count;
+}
+
+int main()
+{
+    int size, k;
+    scanf("%d %d", &size, &k);
+
+    int arr[size];
+
+    for (int i = 0; i < size; i++)
+    {
+        scanf("%d", &arr[i]);
+    }
+
+    printf("The number %d appears %d times in the array.\n", k, countOccurrences(arr, size, k));
+
+    return 0;
+}
