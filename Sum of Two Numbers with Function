@@ -1,0 +1,28 @@
+//Task 01: Sum of Two Numbers
+//Write a function add that takes two integers as parameters and returns their sum.
+
+
+#include<stdio.h>
+
+int sum(int a, int b)
+{
+    return (a+b);
+}
+
+
+int main()
+{
+    int x, y;
+
+    scanf("%d %d",&x, &y);
+
+    int ans = sum(x, y);
+
+    printf("%d",ans);
+
+    return 0;
+}
+
+
+
+
