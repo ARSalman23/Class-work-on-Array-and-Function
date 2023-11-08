@@ -1,0 +1,23 @@
+//Task 02:  Calculate Average
+//Define a function calculateAverage that takes two floats as arguments and returns the average of these two numbers.
+
+#include<stdio.h>
+
+float calculateAverage(float a, float b)
+{
+    return (a+b)/2;
+}
+
+
+int main()
+{
+    float x, y;
+
+    scanf("%f %f", &x, &y);
+
+    float ans = calculateAverage(x, y);
+
+    printf("%.2f",ans);
+
+    return 0;
+}
