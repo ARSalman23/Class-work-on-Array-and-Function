@@ -1,0 +1,36 @@
+//Task 07: Reverse Array
+//Define a function reverseArray that takes an array of integers and its size as arguments and reverses the array. The function doesn't need to return a value (it should alter the array in place and print them).
+
+#include <stdio.h>
+
+void reverseArray (int arr[], int size)
+{
+    int rev[size+128];
+
+    for(int i=0; i < size; i++)
+    {
+        rev[i] = arr[size-1-i];
+    }
+
+    for(int i=0; i < size; i++)
+    {
+        printf("%d ", rev[i]);
+    }
+}
+
+int main()
+{
+    int size;
+    scanf("%d", &size);
+
+    int arr[size];
+
+    for (int i = 0; i < size; i++)
+    {
+        scanf("%d", &arr[i]);
+    }
+
+    reverseArray(arr, size);
+
+    return 0;
+}
